@@ -395,10 +395,13 @@
 		0A2255341830F4FC007BB863 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "niraikanai/niraikanai-Prefix.pch";
 				INFOPLIST_FILE = "niraikanai/niraikanai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +409,13 @@
 		0A2255351830F4FC007BB863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "niraikanai/niraikanai-Prefix.pch";
 				INFOPLIST_FILE = "niraikanai/niraikanai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +473,7 @@
 				0A2255351830F4FC007BB863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2255361830F4FC007BB863 /* Build configuration list for PBXNativeTarget "niraikanaiTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				0A2255381830F4FC007BB863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

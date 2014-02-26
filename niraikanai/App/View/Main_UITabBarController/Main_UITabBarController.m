@@ -71,7 +71,7 @@
     //タブバーの文字色と文字サイズを設定(選択前)
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.584 green:0.310 blue:0.039 alpha:1.000], UITextAttributeTextColor,[UIFont systemFontOfSize:9.000], UITextAttributeFont,nil] forState:UIControlStateNormal];
     //タブバーの文字色と文字サイズを設定(選択中)
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1.000], UITextAttributeTextColor,[UIFont systemFontOfSize:9.000], UITextAttributeFont,nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.176 green:0.271 blue:0.220 alpha:1.000], UITextAttributeTextColor,[UIFont systemFontOfSize:9.000], UITextAttributeFont,nil] forState:UIControlStateSelected];
     
     //初期表示タブページ設定
     NSUInteger sc = [Configuration getStartScreen];

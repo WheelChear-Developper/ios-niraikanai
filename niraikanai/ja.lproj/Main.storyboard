@@ -141,7 +141,7 @@
                                                     <rect key="frame" x="10" y="6" width="300" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_30x30_off.png" id="fxz-Cb-VDM">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_30x30_on.png" id="fxz-Cb-VDM">
                                                     <rect key="frame" x="24" y="12" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1472,7 +1472,7 @@ Cg
                                                     <rect key="frame" x="10" y="6" width="300" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_30x30_off.png" id="ttm-Kg-zE6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_30x30_on.png" id="ttm-Kg-zE6">
                                                     <rect key="frame" x="24" y="13" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1569,7 +1569,7 @@ Cg
                                                     <rect key="frame" x="10" y="6" width="300" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop_30x30_off.png" id="a89-Dr-NAD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop_30x30_on.png" id="a89-Dr-NAD">
                                                     <rect key="frame" x="24" y="12" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1666,7 +1666,7 @@ Cg
                                                     <rect key="frame" x="10" y="6" width="300" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend_30x30_off.png" id="12T-hp-i6l">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend_30x30_on.png" id="12T-hp-i6l">
                                                     <rect key="frame" x="24" y="12" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -2608,9 +2608,9 @@ Cg
         <image name="icon_1024x1024.png" width="1024" height="1024"/>
         <image name="icon_512x512.png" width="512" height="512"/>
         <image name="line-icon.png" width="30" height="30"/>
-        <image name="menu_30x30_off.png" width="30" height="30"/>
-        <image name="news_30x30_off.png" width="30" height="30"/>
-        <image name="recommend_30x30_off.png" width="30" height="30"/>
+        <image name="menu_30x30_on.png" width="30" height="30"/>
+        <image name="news_30x30_on.png" width="30" height="30"/>
+        <image name="recommend_30x30_on.png" width="30" height="30"/>
         <image name="screen1.png" width="640" height="1136"/>
         <image name="screen2.png" width="640" height="1136"/>
         <image name="screen3.png" width="640" height="1136"/>
@@ -2619,7 +2619,7 @@ Cg
         <image name="shop1.jpg" width="480" height="360"/>
         <image name="shop2.jpg" width="238" height="178"/>
         <image name="shop3.jpg" width="238" height="178"/>
-        <image name="shop_30x30_off.png" width="30" height="30"/>
+        <image name="shop_30x30_on.png" width="30" height="30"/>
         <image name="twitter-icon.png" width="30" height="30"/>
         <image name="waku_set1.png" width="300" height="43"/>
         <image name="waku_set_buttom.png" width="300" height="15"/>

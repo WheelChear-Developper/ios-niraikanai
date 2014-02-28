@@ -43,7 +43,7 @@
         Comment = [[VerticallyAlignedLabel alloc] init];
         Comment.frame = CGRectMake(35, 55  , 255, flt_height);
         Comment.verticalAlignment = VerticalAlignmentTop;
-        Comment.numberOfLines = 6;
+        Comment.numberOfLines = 50;
         [Comment setFont:[UIFont systemFontOfSize:13]];
         Comment.textColor = [UIColor darkGrayColor];
         Comment.text = self.str_comment;

@@ -12,7 +12,7 @@
 {
     // ナビゲーションコントローラー制御用
     UINavigationController *naviController;
-    UIAlertView *errAlert_exit;
+//    UIAlertView *errAlert_exit;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic,retain)NSMutableData *mData;

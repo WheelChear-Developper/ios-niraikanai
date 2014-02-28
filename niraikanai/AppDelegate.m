@@ -106,12 +106,14 @@ didFailToRegisterForRemoteNotificationsWithError:(NSError*)err
         // デバイストークン取得エラー表示
 #if DEBUG
 #else
+/*
         errAlert_exit = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Dialog_API_NotConnectTitleMsg",@"")
                                                    message:nil
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Dialog_API_NotConnectMsg",@"")
                                          otherButtonTitles:nil];
         [errAlert_exit show];
+*/
 #endif
     }else{
         // デバイストークンからユーザー情報取得
@@ -168,6 +170,7 @@ didRegisterForRemoteNotificationsWithError:(NSError *)err
 //通信エラー時に呼ばれる
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+/*
     // 通信エラーメッセージ表示
     errAlert_exit = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Dialog_API_NotConnectTitleMsg",@"")
                                                message:nil
@@ -175,11 +178,13 @@ didRegisterForRemoteNotificationsWithError:(NSError *)err
                                      cancelButtonTitle:NSLocalizedString(@"Dialog_API_NotConnectMsg",@"")
                                      otherButtonTitles:nil];
     [errAlert_exit show];
+*/
 }
 
 // アラートのボタンが押された時に呼ばれるデリゲート例文
 -(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+/*
     if(alertView == errAlert_exit){
         switch (buttonIndex) {
             case 0:
@@ -187,6 +192,7 @@ didRegisterForRemoteNotificationsWithError:(NSError *)err
                 break;
         }
     }
+*/
 }
 ///////////////////////// ↑　通信用メソッド　↑　//////////////////////////////
 

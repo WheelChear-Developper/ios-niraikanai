@@ -10,7 +10,7 @@
 
 @interface Main_UITabBarController : UITabBarController
 {
-    UIAlertView *errAlert_exit;
+//    UIAlertView *errAlert_exit;
 }
 @property (nonatomic,retain)NSMutableData *mData;
 @end

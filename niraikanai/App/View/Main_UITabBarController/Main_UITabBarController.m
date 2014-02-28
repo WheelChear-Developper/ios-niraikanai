@@ -120,18 +120,21 @@
         // プロファイル名設定
         [Configuration setProfileName:[jsonParser valueForKeyPath:@"name"]];
     }else{
+/*
         errAlert_exit = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Dialog_API_NotConnectTitleMsg",@"")
                                                    message:nil
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Dialog_API_NotConnectMsg",@"")
                                          otherButtonTitles:nil];
         [errAlert_exit show];
+ */
     }
 }
 
 //通信エラー時に呼ばれる
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+/*
     // 通信エラーメッセージ表示
     errAlert_exit = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Dialog_API_NotConnectTitleMsg",@"")
                                                message:nil
@@ -139,11 +142,13 @@
                                      cancelButtonTitle:NSLocalizedString(@"Dialog_API_NotConnectMsg",@"")
                                      otherButtonTitles:nil];
     [errAlert_exit show];
+*/
 }
 
 // アラートのボタンが押された時に呼ばれるデリゲート例文
 -(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+/*
     if(alertView == errAlert_exit){
         switch (buttonIndex) {
             case 0:
@@ -151,6 +156,7 @@
                 break;
         }
     }
+*/
 }
 ///////////////////////// ↑　通信用メソッド　↑　//////////////////////////////
 

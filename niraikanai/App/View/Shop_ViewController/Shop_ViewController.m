@@ -109,7 +109,7 @@
         }
         case 2:{
             [headerView addSubview:headerImageView];
-            title.text = @"出張カット";
+            title.text = @"琉球空間の雰囲気";
             [headerView addSubview:title];
             break;
         }

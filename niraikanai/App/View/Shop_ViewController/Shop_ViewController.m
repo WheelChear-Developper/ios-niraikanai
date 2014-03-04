@@ -135,7 +135,7 @@
 
 - (IBAction)btn_web:(id)sender
 {
-    [Configuration setWebURL:@"http://www.skip-ukiuki.com/"];
+    [Configuration setWebURL:@"http://www.just.st/?in=311134&amp;qr=1004471"];
 }
 
 - (IBAction)btn_set1:(id)sender

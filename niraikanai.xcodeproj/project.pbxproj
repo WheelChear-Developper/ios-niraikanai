@@ -1020,7 +1020,7 @@
 		D1B05D0718BA12BA004913C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "niraikanai/niraikanai-Prefix.pch";
 				INFOPLIST_FILE = "niraikanai/niraikanai-Info.plist";
@@ -1033,7 +1033,7 @@
 		D1B05D0818BA12BA004913C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: akafune, Inc. (28UP93TVV6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "niraikanai/niraikanai-Prefix.pch";
 				INFOPLIST_FILE = "niraikanai/niraikanai-Info.plist";

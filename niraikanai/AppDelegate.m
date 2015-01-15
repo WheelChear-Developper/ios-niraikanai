@@ -20,9 +20,21 @@
     application.applicationIconBadgeNumber = 0;
     
     // push通知呼び出し用
-    [application registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge|
-                                                      UIRemoteNotificationTypeSound|
-                                                      UIRemoteNotificationTypeAlert)];
+    float iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+    NSLog(@"iOS %f", iOSVersion);
+    if(iOSVersion >= 8.0)
+    {
+        // push通知呼び出し用
+        UIUserNotificationType types =    UIUserNotificationTypeBadge|UIUserNotificationTypeSound|UIUserNotificationTypeAlert;
+        UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [application registerUserNotificationSettings:mySettings];
+    }else{
+        // push通知呼び出し用
+        [application registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge|
+                                                          UIRemoteNotificationTypeSound|
+                                                          UIRemoteNotificationTypeAlert)];
+    }
+    
     //トピック初期化
     [Configuration synchronize];
     
@@ -82,6 +94,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    [application registerForRemoteNotifications];
 }
 
 // デバイストークン取得成功

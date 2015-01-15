@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nKX-AD-l3U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nKX-AD-l3U">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--MainUI Tab Bar Controller-->
@@ -86,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="2486" y="-837"/>
         </scene>
-        <!--Navigation Controller - ニュース-->
+        <!--ニュース-->
         <scene sceneID="8TA-L2-URN">
             <objects>
                 <navigationController definesPresentationContext="YES" id="3s1-a0-JXQ" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="285" y="-837"/>
         </scene>
-        <!--Navigation Controller - メニュー-->
+        <!--メニュー-->
         <scene sceneID="2aZ-Eu-Qzb">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Nbc-vd-L98" sceneMemberID="viewController">
@@ -124,7 +124,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="Gaid1_ViewController" id="UCt-Z0-SE4" customClass="Gaid1_ViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="exl-pK-xgW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="936"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -228,12 +228,13 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="4oB-uR-cBI"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1000"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59K-T1-4MN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1418" y="2298"/>
         </scene>
-        <!--Navigation Controller - その他-->
+        <!--その他-->
         <scene sceneID="M0a-wv-dDv">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o32-eB-891" sceneMemberID="viewController">
@@ -249,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="285" y="1224"/>
         </scene>
-        <!--Navigation Controller - 店舗情報-->
+        <!--店舗情報-->
         <scene sceneID="R3E-5w-wCA">
             <objects>
                 <navigationController definesPresentationContext="YES" id="M3n-ho-6nm" sceneMemberID="viewController">
@@ -270,7 +271,7 @@
             <objects>
                 <tableViewController id="BM5-zp-HMP" customClass="Shop_ViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1PS-tc-aZh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="2500"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="2436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1440,6 +1441,7 @@ Cg
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="Jp6-eL-asO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="2500"/>
                     <connections>
                         <outlet property="btn_tel" destination="MLM-zW-ZQf" id="GpW-GL-UdD"/>
                         <outlet property="btn_web" destination="7JT-s0-URW" id="7FR-91-KcK"/>
@@ -1542,6 +1544,7 @@ Cg
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="664"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ5-ME-P4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1639,6 +1642,7 @@ Cg
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="664"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZJ-rd-9Bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1736,6 +1740,7 @@ Cg
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="664"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldT-3O-sSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2083,7 +2088,7 @@ Cg
             <objects>
                 <tableViewController id="brz-TX-vcR" customClass="Setting_ViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Z1-n6-frW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2462,6 +2467,7 @@ Cg
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="Jm4-6X-zyg"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="600"/>
                     <connections>
                         <outlet property="FacebookButton" destination="817-cK-b7U" id="sKm-i1-Nfq"/>
                         <outlet property="LineButton" destination="UDj-Gx-71z" id="Ejc-eT-YXm"/>

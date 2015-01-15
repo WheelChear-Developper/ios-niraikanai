@@ -58,6 +58,12 @@
     
     // スナップアクション再読み込みフラグ
     bln_download = NO;
+}
+
+// 起動・再開の時に起動するメソッド
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
     // 本体データ取得
     Web_View.scalesPageToFit = YES;
@@ -65,12 +71,6 @@
     NSURL *URL_STRING = [NSURL URLWithString:str_URL];
     NSURLRequest *req = [NSURLRequest requestWithURL:URL_STRING cachePolicy: NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:60.0];
     [Web_View loadRequest:req];
-}
-
-// 起動・再開の時に起動するメソッド
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
 }
 
 // 画面の表示の時に起動するメソッド
@@ -122,7 +122,8 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     NSLog(@"Errcode_%ld",(long)error.code);
-    if(!error.code == NSURLErrorCancelled){
+    if(error.code == NSURLErrorCancelled){
+    }else{
         // 読み込み中の表示削除
         [SVProgressHUD dismiss];
         bln_download = NO;

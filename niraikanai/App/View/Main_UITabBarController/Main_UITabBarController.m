@@ -47,17 +47,14 @@
     tabBarItem3.title = NSLocalizedString(@"Tab_TitleName3",@"");
     tabBarItem4.title = NSLocalizedString(@"Tab_TitleName4",@"");
     
-    tabBarItem1.tag = 0;
-    tabBarItem2.tag = 1;
-    tabBarItem3.tag = 2;
-    tabBarItem4.tag = 3;
-    
-    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"news_30x30_off.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"news_30x30_on.png"]];
-    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"menu_30x30_off.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"menu_30x30_on.png"]];
-    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"shop_30x30_off.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"shop_30x30_on.png"]];
-    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"recommend_30x30_off.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"recommend_30x30_on.png"]];
-    
-    tabBarItem1 = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Tab_TitleName1",@"") image:nil tag:0];
+    tabBarItem1.image = [[UIImage imageNamed:@"news_30x30_on.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem1.selectedImage = [[UIImage imageNamed:@"news_30x30_off.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem2.image = [[UIImage imageNamed:@"menu_30x30_on.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem2.selectedImage = [[UIImage imageNamed:@"menu_30x30_off.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem3.image = [[UIImage imageNamed:@"shop_30x30_on.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem3.selectedImage = [[UIImage imageNamed:@"shop_30x30_off.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem4.image = [[UIImage imageNamed:@"recommend_30x30_on.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem4.selectedImage = [[UIImage imageNamed:@"recommend_30x30_off.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //タブ背景・選択背景設定
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tab_background.png"]];
@@ -80,14 +77,11 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-#if DEBUG
-#else
     // ユーザー情報取得確認
     NSString *str_URL = [NSString stringWithFormat:@"%@%@%@",NSLocalizedString(@"Service_DomainURL",@""), NSLocalizedString(@"Service_UserGetURL",@""), [Configuration getDeviceTokenKey]];
     NSURL *URL_STRING = [NSURL URLWithString:str_URL];
     NSMutableURLRequest *dev_request = [NSMutableURLRequest requestWithURL:URL_STRING];
     [NSURLConnection connectionWithRequest:dev_request delegate:self];
-#endif
 }
 
 ///////////////////////// ↓　通信用メソッド　↓　//////////////////////////////
